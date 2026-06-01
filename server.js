@@ -13,6 +13,13 @@ app.get("/", (req, res)=>{
     }
 })
 
+app.post("/", (req, res) =>{
+    try{
+     console.log(req.body)
+    }catch(err){
+        console.error(err)
+    }
+})
 
 app.listen(5000, ()=>{
     console.log("Backend Server is Connected")
