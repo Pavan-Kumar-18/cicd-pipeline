@@ -13,7 +13,7 @@ app.get("/", (req, res)=>{
     }
 })
 
-app.post("/", (res, res) =>{
+app.post("/", (req, res) =>{
     try{
      console.log(res.body)
      console.log("Happy brother")
