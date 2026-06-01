@@ -13,9 +13,9 @@ app.get("/", (req, res)=>{
     }
 })
 
-app.post("/", (req, res) =>{
+app.post("/", (res, res) =>{
     try{
-     console.log(req.body)
+     console.log(res.body)
     }catch(err){
         console.error(err)
     }
