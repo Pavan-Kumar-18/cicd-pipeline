@@ -1,19 +1,27 @@
-name: Node CI
+name : Node CICD
 
 on:
-  push
+    push:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+     runs-on : ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+     steps:
+       - name : install Vm 
+         uses : actions/checkout@v4
+     
+       - name : install node
+         uses : actions/setup-node@v4
+         with:
+             node-version : 22
+         
+       - name : install dependiencies
+         run : npm install
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - run: npm install
-
-      - run: echo "Build Successful"
+       - name : start servet and test API 
+         run :  |
+             node server.js &
+             sleep 5
+             curl http://localhost:5000
+    
