@@ -23,9 +23,8 @@ app.post("/", (req, res) =>{
 })
 
 app.get("/data" , (req, res)=>{
-    HTMLLegendElement.
     try{
-    
+     console.log("Hello Hi")
     }catch(err){
         console.log(err)
     }
