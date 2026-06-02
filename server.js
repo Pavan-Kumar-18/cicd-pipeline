@@ -24,7 +24,7 @@ app.post("/", (req, res) =>{
 
 app.get("/data" , (req, res)=>{
     try{
-     console.log("Hello Hi")
+     console.log("Hello Hi welcome")
     }catch(err){
         console.log(err)
     }
