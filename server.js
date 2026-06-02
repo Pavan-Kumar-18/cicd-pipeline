@@ -23,7 +23,7 @@ app.post("/", (req, res) =>{
 })
 
 app.get("/data" , (req, res)=>{
-    HTMLLegendElement.
+    HTMLLegendElement.wjnjnjsa.jndndnd.
     try{
     
     }catch(err){
