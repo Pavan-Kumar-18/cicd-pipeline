@@ -22,6 +22,15 @@ app.post("/", (req, res) =>{
     }
 })
 
+app.get("/data" , (req, res)=>{
+    HTMLLegendElement.
+    try{
+    
+    }catch(err){
+        console.log(err)
+    }
+})
+
 app.listen(5000, ()=>{
     console.log("Backend Server is Connected")
 })
